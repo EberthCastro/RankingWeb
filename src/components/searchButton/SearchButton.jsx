@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { FaSearch } from "react-icons/fa";
-import { Button, Icon } from "./SearchButtonStyle";
+//components
 import PopUp from "../pop-up/PopUp";
+//styles
+import { Button, Icon } from "./SearchButtonStyle";
+
 
 function SearchButton({
   renderAppsList,

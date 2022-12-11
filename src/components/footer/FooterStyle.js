@@ -1,15 +1,16 @@
 import styled from "styled-components";
 import { bgFooter} from "../../variables/ColorVariables";
 
-export const FooterStyled = styled.footer`
+export const FooterStyled = styled.div`
   ${bgFooter};
  
   display: flex;
-  flex-direction: row;
   height: 3rem;
+  width: 99%;
   justify-content: space-between;
   padding: 0.2rem 0.5rem;
-  align-items: center;
+  align-items: center;  
+  bottom: 0 !important;
 
   ul{
     display: flex;

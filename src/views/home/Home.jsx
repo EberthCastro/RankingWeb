@@ -1,13 +1,18 @@
-import Card from "../../components/card/Card";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+//Components
 import Navbar from "../../components/navbar/Navbar";
-import Apps from "../../data/app.json";
 import FilterTabs from "../../components/filter-tabs/FilterTabs";
+import Card from "../../components/card/Card";
 import Carousel from "../../components/carousel/Carousel";
-import { ContainerApps, IconAddApp } from "./HomeStyle";
-import { FaPlusCircle } from "react-icons/fa";
 import Footer from "../../components/footer/Footer";
+//Datas (Json)
+import Apps from "../../data/app.json";
+//Router Dom
+import { Link } from "react-router-dom";
+//Styles
+import { ContainerApps, IconAddApp } from "./HomeStyle";
+//Icons
+import { FaPlusCircle } from "react-icons/fa";
 
 export default function Home() {
   // New array with ordered apps from higher to lower ranking value.
@@ -32,7 +37,7 @@ export default function Home() {
   //New array with all "Type" values and add "All" as a "Type" value.
   const allAppTypes = [...new Set(Apps.map((app) => app.type))];
 
-  const [tabsFilterOrder, setTabsFilterOrder] = useState(bestAppsList);
+  const [tabsFilterOrder, setTabsFilterOrder] = useState(Apps);
   const [originalDataOrder, setOriginalDataOrder] = useState(tabsFilterOrder);
   const [secondDataOrder, setSecondDataOrder] = useState(tabsFilterOrder);
 

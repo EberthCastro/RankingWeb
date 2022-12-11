@@ -1,6 +1,8 @@
 import React from "react";
+//components
 import ToggleButton from "./toggle-button/ToggleButton";
 import InputPopUp from "./input-popup/InputPopUp";
+//styles
 import {
   PopUpContainer,
   FiltersContainer,

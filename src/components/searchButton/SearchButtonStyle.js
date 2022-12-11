@@ -4,17 +4,11 @@ import { FaSearch } from "react-icons/fa";
 
 export const Button = styled.button`
   border: none;
-  
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: auto;
   background: none;
+  cursor: pointer;
 `;
- export const Icon = styled(FaSearch)`
-font-size:1.8rem;
-${txtLight};
-
-
- 
- `;
+export const Icon = styled(FaSearch)`
+  font-size: 2rem;
+  ${txtLight};
+`;

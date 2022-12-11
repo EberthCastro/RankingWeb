@@ -1,19 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from "../../assets/images/ranking-app-logo-b.svg";
 import SearchButton from '../searchButton/SearchButton';
+import { Link } from 'react-router-dom';
+import Logo from "../../assets/images/ranking-app-logo-b.svg";
 import { Header } from './NavbarStyle';
 
 function Navbar({
   renderAppsList,
-  setRenderAppsList,
+  setRenderAppsList, 
   originalDataOrder,
   setOriginalDataOrder,
 }) {
   return (
     <Header>
       <Link to="/" >
-        <img src={logo} alt="RankingApp logo" className="logo"/>
+        <img src={Logo} alt="RankingApplogo" className="logo"/>
       </Link>
       <SearchButton
         renderAppsList={renderAppsList}

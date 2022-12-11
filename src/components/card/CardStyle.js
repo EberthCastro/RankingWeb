@@ -1,37 +1,34 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
+
 export const App = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  margin: 2rem;
-  width: 22rem;  
+  flex-wrap: wrap;   
+  width: 25rem;
+  padding: 0.5rem;
+  margin: 0.5rem;  
+  gap: 2rem;
+  
 `;
 
 export const Icon = styled.img`
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 8.5rem;
+  height: 8.5rem;
   /* border: 1px solid; */
   border-radius: 1rem;
+  background-color: black;
 `;
 
 export const TextContainer = styled.div`
-  display: flex;
-  width: 100vw;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1rem;
-  /* filter: hue-rotate(20deg) brightness(200%); */
-  /* filter: hue-rotate(180deg) brightness(70%); */
-
+  display: flex;  
+  flex-direction: column;  
+  padding: 0.5rem;
+  gap: 2rem;
+  font-weight: bold;
+ 
   .star{
+    font-size: 1.2rem;
     display: flex;
-    align-items: center;
-    
-    
+    align-items: center;     
   }
 `;

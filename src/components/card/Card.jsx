@@ -12,9 +12,9 @@ function Card({ app }) {
           <Icon src={app.app_icon} alt="descr" />
         </Link>
         <TextContainer>
-          <span>
+          <h3>
             <b>{app.app_name}</b>
-          </span>
+          </h3>
           <span>{app.type}</span>
           <div className="star">
             <AiFillStar style={{ color: "#2670E0" }} />
@@ -22,13 +22,7 @@ function Card({ app }) {
               <b>{app.rating.toString()}</b>
             </span>
           </div>
-          {/* <Rating
-            name="half-rating-read"
-            defaultValue={parseFloat(app.rating)}
-            style={{ color: "#2670E0" }}
-            precision={1}
-            readOnly
-          /> */}
+          
         </TextContainer>
       </App>
     </>
